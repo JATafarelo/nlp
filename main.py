@@ -8,6 +8,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk import tokenize
 
+#download imdb dataset :https://www.kaggle.com/luisfredgs/imdb-ptbr
+
 def classificar_texto(texto, coluna_texto, coluna_classificacao):
     vetorizar = CountVectorizer(lowercase=False, max_features=50)
 
